@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo-Fi Desk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<div class="glass">
+
+    <div class="header-box">
+        <h1>☕ Lo-Fi Desk</h1>
+        <p class="subtitle">
+            A cozy workspace for studying and relaxing
+        </p>
+    </div>
+
+    <div class="top-row">
+
+    <div class="music-box">
+        <h2>Music</h2>
+
+        <label class="radio">
+            <input type="radio" name="music" value="lofi-chill">
+            Lo-Fi Chill
+        </label>
+
+        <label class="radio">
+            <input type="radio" name="music" value="lofi-soft">
+            Lo-Fi Soft
+        </label>
+
+        <label class="radio">
+            <input type="radio" name="music" value="lofi-sample">
+            Lo-Fi Sample
+        </label>
+
+        <button id="stopMusic">Stop Music</button>
+
+        <div class="slider-box">
+            <label>Music Volume</label>
+            <input type="range"
+                   id="musicVolume"
+                   min="0"
+                   max="1"
+                   step="0.01"
+                   value="0.5">
+        </div>
+    </div>
+
+    <div class="timer-box">
+
+        <h2>Focus Timer</h2>
+
+        <input type="number"
+               id="timerInput"
+               value="25"
+               min="1"
+               max="999">
+
+        <div id="timerDisplay">
+            25:00
+        </div>
+
+        <button id="startTimer">Start</button>
+        <button id="pauseTimer">Pause</button>
+        <button id="resetTimer">Reset</button>
+
+    </div>
+
+</div>
+
+    <div class="section ambience-card"></div>
+        <h2>Ambience</h2>
+
+        <div class="slider-box">
+            <label>Rain</label>
+            <input type="range" id="rain" min="0" max="1" step="0.01" value="0">
+        </div>
+
+        <div class="slider-box">
+            <label>Dark Rain</label>
+            <input type="range" id="darkRain" min="0" max="1" step="0.01" value="0">
+        </div>
+
+        <div class="slider-box">
+            <label>Fireplace</label>
+            <input type="range" id="fireplace" min="0" max="1" step="0.01" value="0">
+        </div>
+
+        <div class="slider-box">
+            <label>Vinyl</label>
+            <input type="range" id="vinyl" min="0" max="1" step="0.01" value="0">
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

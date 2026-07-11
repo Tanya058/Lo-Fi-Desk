@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+    background:url("bg.png") center center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#particles{
+    position:fixed;
+    inset:0;
+    z-index:0;
+}
+
+.glass{
+    position:relative;
+    z-index:2;
+
+    width:700px;
+    max-height:90vh;
+    overflow:auto;
+
+    padding:25px;
+
+    border-radius:24px;
+
+    background:rgba(70,55,40,0.25);
+    backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    box-shadow:0 8px 40px rgba(0,0,0,0.4);
+
+    color:#f7f2e8;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:5px;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:20px;
+    color:#ddd3c3;
+}
+
+.section{
+    margin-top:20px;
+}
+
+.section h2{
+    margin-bottom:12px;
+    color:#cfd7c0;
+}
+
+.radio{
+    display:block;
+    margin-bottom:10px;
+    cursor:pointer;
+}
+
+.slider-box{
+    margin-top:12px;
+}
+
+.slider-box label{
+    display:block;
+    margin-bottom:4px;
+}
+
+input[type="range"]{
+    width:100%;
+    accent-color:#8b9b74;
+}
+
+button{
+    width:100%;
+    margin-top:10px;
+    padding:10px;
+
+    border:none;
+    border-radius:12px;
+
+    background:#8b9b74;
+    color:#1d2417;
+    font-weight:600;
+
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+::-webkit-scrollbar{
+    width:6px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#8b9b74;
+    border-radius:10px;
+}
+.top-row{
+    display:flex;
+    gap:15px;
+    align-items:flex-start;
+}
+
+.music-box{
+    flex:1;
+
+    background:rgba(255,255,255,0.08);
+
+    padding:15px;
+
+    border-radius:18px;
+}
+
+.timer-box{
+    width:180px;
+
+    background:rgba(255,255,255,0.08);
+
+    padding:15px;
+
+    border-radius:18px;
+}
+
+.timer-box h2{
+    text-align:center;
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+#timerInput{
+    width:100%;
+    padding:8px;
+
+    border:none;
+    border-radius:8px;
+
+    margin-bottom:10px;
+
+    background:rgba(255,255,255,0.15);
+    color:white;
+}
+
+#timerDisplay{
+    text-align:center;
+
+    font-size:28px;
+    font-weight:bold;
+
+    margin:10px 0 15px;
+}
+
+.timer-box button{
+    width:100%;
+    margin-top:6px;
+}
+.header-box{
+    background:rgba(255,255,255,0.08);
+
+    border-radius:18px;
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+    text-align:center;
+}
+.ambience-card{
+    margin-top:20px;
+
+    background:rgba(255,255,255,0.08);
+
+    padding:15px;
+
+    border-radius:18px;
+}
